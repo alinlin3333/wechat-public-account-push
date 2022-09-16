@@ -64,7 +64,7 @@ export const config = {
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: "oFzSO5_2eKAgk35Vim1uvjunn9_I",
       // 你想对他发送的模板消息的模板ID
-      useTemplateId: "tvWArq09swMv_Q7pbThCh8luRxh1RH3M8Jr2DJF9KZU",
+      useTemplateId: "	AzkCT5sdBhis29Num_uLJd8uFvJ3pbSZel4nHK6_E7s",
       // 所在省份
       province: "江西",
       // 所在城市
@@ -96,7 +96,7 @@ export const config = {
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: "oFzSO54NoiyYJPvS20h_xyQ-yNmk",
       // 你想对他发送的模板消息的模板ID
-      useTemplateId: "tvWArq09swMv_Q7pbThCh8luRxh1RH3M8Jr2DJF9KZU",
+      useTemplateId: "	AzkCT5sdBhis29Num_uLJd8uFvJ3pbSZel4nHK6_E7s",
       // 所在省份
       province: "山东",
       // 所在城市
@@ -130,7 +130,7 @@ export const config = {
    */
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: "tvWArq09swMv_Q7pbThCh8luRxh1RH3M8Jr2DJF9KZU",
+  CALLBACK_TEMPLATE_ID: "	AzkCT5sdBhis29Num_uLJd8uFvJ3pbSZel4nHK6_E7s",
 
   // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
   CALLBACK_USERS: [
@@ -144,70 +144,7 @@ export const config = {
     // ...
   ],
 
-  /**
-   * 信息配置
-   */
-
-  /** 天气相关 */
-
-  // 默认所在省份, USERS 中没填的话, 会默认拿这里的省份
-  PROVINCE: "广东",
-  // 默认所在城市, USERS 中没填的话, 会默认拿这里的城市
-  CITY: "惠州",
-
-  /** 重要节日相关 */
-
-  /**
-   * 重要节日，修改名字为对应需要显示的名字, date 仅填月日即可, 请严格按照示例填写
-   * type必须填！ 只能 “生日” 和 “节日” 二选一!
-   * 
-   * --- 阴历配置开始 ---
-   * 如果日期使用阴历，请在 “生日” 或 "节日“ 前添加 * 符号
-   * --- 阴历配置结束 ---
-   * 
-   * 生日时，name填写想要展示的名字，你可以填“美丽可爱亲亲老婆”
-   * 节日时，name填写相应展示的节日，你可以填“被搭讪纪念日”
-   * 
-   * --- 是否展示周岁信息开始 ---
-   * isShowAge: true 展示岁数, 仅type为生日生效
-   * isShowAge: false 不展示岁数, 仅type为生日生效
-   * 删除isShowAge属性，也会不展示岁数
-   * --- 是否展示周岁信息结束 ---
-   */
-  FESTIVALS: [
-    // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-    {"type": "*生日", "name": "老婆", "year": "1996", "date": "09-09", isShowAge: true},
-    {"type": "节日", "name": "结婚纪念日", "year": "2020", "date": "09-03"},
-    // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-    {"type": "生日", "name": "李四", "year": "1996", "date": "09-31", isShowAge: true},
-    {"type": "节日", "name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
-    // 你可以不断按格式往下增加
-    // ...
-  ],
-
-  /**
-   * 限制重要节日的展示条目, 需要填写数字;
-   * 如果为3, 则仅展示“将要到达” 的3个重要节日提醒，剩下的将被忽略
-   * 如果为0, 则默认展示全部
-   */
-  FESTIVALS_LIMIT: 4,
-
-  /** 日期相关 */
-
-  /** 你现在可以随心增加你认为的所有的需要纪念的日子啦！
-    * keyword是指暴露给测试号的模板字段，填什么就暴露什么, 请注意不要和README的出参表中的字段重复。
-    * 比如：keyword: "love_date" ，在测试号中就是 {{ love_date.DATA }}
-    * */
-  CUSTOMIZED_DATE_LIST: [
-    // 在一起的日子
-    {"keyword": "love_day", date: "2022-09-08"},
-    // 结婚纪念日
-    {"keyword": "marry_day", date: "2022-09-09"},
-    // 退伍日
-    {"keyword": "ex_day", date: "2022-09-10"},
-    // 你可以不断按格式往下增加
-    // ...
-  ],
+ 
 
   /** 插槽 */
 
