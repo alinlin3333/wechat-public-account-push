@@ -41,7 +41,7 @@ export const config = {
     poetry: false,
 
     /** 星座运势 */
-    horoscope: true,
+    horoscope: false,
 
     /** 生日消息和节日消息 */
     birthdayMessage: true,
@@ -62,7 +62,7 @@ export const config = {
       // 想要发送的人的名字
       name: "夏总",
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: "oFzSO5_2eKAgk35Vim1uvjunn9_I",
+      id: "	RmbRDDXeyb21y15Wp7b9hAIqB7q7aJWYCtcWtQkHS6A",
       // 你想对他发送的模板消息的模板ID
       useTemplateId: "dlv-ebLjFvtsteb1U_vun9Jiv8V3VVTV4aMYY9UNz90",
       // 所在省份
@@ -95,7 +95,7 @@ export const config = {
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: "oFzSO54NoiyYJPvS20h_xyQ-yNmk",
       // 你想对他发送的模板消息的模板ID
-      useTemplateId: "dlv-ebLjFvtsteb1U_vun9Jiv8V3VVTV4aMYY9UNz90",
+      useTemplateId: "	RmbRDDXeyb21y15Wp7b9hAIqB7q7aJWYCtcWtQkHS6A",
       // 所在省份
       province: "山东",
       // 所在城市
@@ -131,7 +131,7 @@ export const config = {
    */
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: "",
+  CALLBACK_TEMPLATE_ID: "	RmbRDDXeyb21y15Wp7b9hAIqB7q7aJWYCtcWtQkHS6A",
 
   // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
   CALLBACK_USERS: [
