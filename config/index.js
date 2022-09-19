@@ -36,7 +36,7 @@ export const config = {
     // 朋友圈文案
     momentCopyrighting: false,
     // 毒鸡汤
-    poisonChickenSoup: false,
+    poisonChickenSoup: true,
     // 古诗古文
     poetry: false,
 
@@ -120,6 +120,38 @@ export const config = {
      
       ]
     },
+       {
+      // 想要发送的人的名字
+      name: "杜小花",
+      // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
+      id: "oFzSO54NoiyYJPvS20h_xyQ-yNmk",
+      // 你想对他发送的模板消息的模板ID
+      useTemplateId: "7LKQbo5xurYuIGPmZOCvw-pNCtxuJMXseLX-fLPMIDc",
+      // 所在省份
+      province: "山东",
+      // 所在城市
+      city: "泰安",
+      // 新历生日, 仅用作获取星座运势, 格式必须
+      horoscopeDate: '06-28',
+      // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
+      horoscopeDateType: '今日',
+      // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
+      openUrl: "https://weibo.com/skygy",
+      // 专属节日提醒，如果你在这里填写了节日提醒，就不会执行FESTIVALS的提醒了, 和FESTIVALS的配置方法相同，可以往下查看，我这里就不重复写了
+      festivals: [
+       
+        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
+        {"type": "生日", "name": "你爹", "year": "2002", "date": "06-21"},
+        {"type": "生日", "name": "杜小花", "year": "2002", "date": "06-28"},
+      ],
+      // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同，可以往下查看，我这里就不重复写了
+      customizedDateList: [
+        // 认识
+        {"keyword": "see_day", date: "2020-10-09"},
+     
+      ]
+    },
+    
     
     
     // 你可以不断按格式往下增加
@@ -131,7 +163,7 @@ export const config = {
    */
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: "RmbRDDXeyb21y15Wp7b9hAIqB7q7aJWYCtcWtQkHS6A",
+  CALLBACK_TEMPLATE_ID: "7LKQbo5xurYuIGPmZOCvw-pNCtxuJMXseLX-fLPMIDc",
 
   // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
   CALLBACK_USERS: [
@@ -194,7 +226,8 @@ export const config = {
     // 在一起的日子
     {"keyword": "love_day", date: "2020-12-30"},
     // 你可以不断按格式往下增加
-    // ...
+    //认识
+    {"keyword": "see_day", date: "2020-10-09"}
   ],
 
   /** 插槽 */
